@@ -1,3 +1,4 @@
+"use strict";
 import { quoteIsStarted } from ".";
 const modal = document.querySelector("#modal");
 let modalIsShown = false;

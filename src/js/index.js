@@ -1,3 +1,4 @@
+"use strict";
 import { checkTimeoutForModalWindow, closeModalWindow, showModalWindow, timeoutForModalWindow } from "./modal";
 
 const quotes = [
