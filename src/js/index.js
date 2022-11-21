@@ -97,7 +97,8 @@ function renderQuote(obj) {
 //? }
 
 function randomQuote(arr) {
-  return (obj = arr[Math.floor(Math.random() * arr.length)]);
+  obj = arr[Math.floor(Math.random() * arr.length)];
+  return obj;
 }
 
 export let quoteIsStarted = false;
