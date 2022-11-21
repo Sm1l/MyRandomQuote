@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyRandomQuote</title>
+    <meta name="description" content="Описание сайта" />
+    <meta name="keywords" content="MyRandomQuote" />
+    <meta name="author" content="Sm[1]le=)" />
+    <meta property="og:title" content="MyRandomQuote" />
+    <meta property="og:description" content="MyRandomQuote" />
+    <link rel="stylesheet" href="/src/scss/style.scss" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container"></div>
+      </header>
+      <main class="page">
+        <section class="page__general general">
+          <div class="general__container">
+            <div class="general__body">
+              <h1 class="general__title">MyRandomQuote</h1>
+              <p class="general__rules">
+                Добро пожаловать в MyRandomQuote. Здесь вы, определенно, найдете цитату, котороя сейчас окажется Вам
+                очень нужной и полезной! Нажмите на кнопку "Start", чтобы запустить колесо фортуны! А, когда будете
+                готовы, жмите на кнопку "Stop", чтобы остановить колесо и узнать что-же Вам приготовила фортуна!
+                Дерзайте!=)
+              </p>
+              <div id="quotes-div" class="general__quotes"></div>
+              <div class="general__buttons">
+                <a href="#" id="button-start" class="general__button general__button_start">Start</a>
+                <a href="#" id="button-stop" class="general__button general__button_stop">Stop</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+    <div id="modal" class="page__modal modal">
+      <div class="modal__container">
+        <h3 class="modal__title">Подпишитесь на нашу ежедневную рассылку цитат!</h3>
+        <form action="post" class="modal__form">
+          <label class="modal__label">
+            <input id="modal-email" type="email" class="modal__email" placeholder="email" />
+            <button id="modal-submit" type="submit" class="modal__button">Subscribe</button>
+          </label>
+        </form>
+        <a id="modal-close" href="#" class="modal__close"> </a>
+      </div>
+    </div>
+    <script type="module" src="/src/js/index.js"></script>
+  </body>
+</html>
