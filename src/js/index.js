@@ -1,5 +1,5 @@
 "use strict";
-import { checkTimeoutForModalWindow, closeModalWindow, showModalWindow, timeoutForModalWindow } from "./modal";
+import { checkTimeoutForModalWindow } from "./modal";
 
 const quotes = [
   {
@@ -70,9 +70,9 @@ const quotes = [
     quote: "Не очень-то вежливо уходить из гостей сразу, как только ты наелся.",
   },
 ];
+const quotesDiv = document.querySelector("#quotes-div");
 
 function renderQuote(obj) {
-  const quotesDiv = document.querySelector("#quotes-div");
   const quoteEl = document.createElement("p");
   const nameEl = document.createElement("span");
   quoteEl.classList.add("general__quote");
@@ -83,19 +83,6 @@ function renderQuote(obj) {
   quotesDiv.append(quoteEl);
   quotesDiv.append(nameEl);
 }
-
-//? let previousEl;
-
-//? function randomQuote(arr) {
-//?   i = Math.floor(Math.random() * arr.length);
-//?  console.log(i);
-//?   if (i !== previousEl) {
-//?     previousEl = i;
-//?     return (obj = arr[i]);
-//?   } else {
-//?  randomQuote(arr)
-//?   }
-//? }
 
 function randomQuote(arr) {
   return arr[Math.floor(Math.random() * arr.length)];

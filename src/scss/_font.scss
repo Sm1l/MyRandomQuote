@@ -8,3 +8,10 @@ body {
   line-height: 143%;
   color: var(--color-swamp);
 }
+
+@media (max-width: 850px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
